@@ -3,8 +3,41 @@ exec-timeout 7200
 show version
 show boot
 
+reload
+
 ap-type mobility-express
 config boot path 1
+config boot path 2
+
+archive download-sw /reload tftp://10.0.0.2/ap3g3-k9w8-tar.153-3.JK.tar
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-105-0.tar
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-196-0.tar
+
+show country
+config 802.11a disable network
+config 802.11b disable network
+config country J4
+show country
+config 802.11a enable network
+config 802.11b enable network
+show 802.11a
+show 802.11b
+save config
+
+
+ME console
+10.0.0.99/24
+10.0.0.2
+SSID:cisco-ap-2802/ev
+psk
+
+ME wizard
+CiscoAirProvision/password
+192.168.1.0/24
+mobilityexpress.cisco
+http(s?)://192.168.1.1
+
+
 
 ap-type mobility-express tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-196-0.tar
 ap-type mobility-express /overwrite tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-196-0.tar
