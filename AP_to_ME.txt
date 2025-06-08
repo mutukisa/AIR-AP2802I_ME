@@ -1,0 +1,63 @@
+terminal length 0
+exec-timeout 7200
+show version
+show boot
+
+ap-type mobility-express
+config boot path 1
+
+ap-type mobility-express tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-196-0.tar
+ap-type mobility-express /overwrite tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-196-0.tar
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-196-0.tar
+archive download-sw /overwrite /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-196-0.tar
+
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-105-0.tar
+
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-151-0.tar
+
+archive download-sw ap-type mobility-express tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-196-0.tar
+
+ap-type mobility-express tftp://10.0.0.2/ap3g3
+ap-type mobility-express /overwrite tftp://10.0.0.2/ap3g3
+archive download-sw /reload tftp://10.0.0.2/ap3g3
+archive download-sw /overwrite /reload tftp://10.0.0.2/ap3g3
+
+archive download-sw /reload tftp://10.0.0.2/ap3g3-k9w8-tar.153-3.JK.tar
+
+archive download-sw /reload tftp://10.0.0.2/ap3g3-k9w8-tar.17_15_3_28.tar
+archive download-sw /reload tftp://10.0.0.2/ap3g3-k9w8-tar.17_17_0_87.tar
+
+#archive download-sw /reload tftp://10.0.0.2/ap3g3-k9w8-tar.17_17_0_87.tar
+
+archive download-sw /overwrite /reload tftp://10.0.0.2/ap3g3-k9w8-tar.17_17_0_87.tar
+
+
+archive download-sw /overwrite /force-reload tftp://10.0.0.2/ap3g3-k9w8-tar.17_17_0_87.tar
+
+archive download-sw /overwrite tftp://192.168.2.49/ap3g3-k9w8-tar.17_17_0_87.tar
+
+15.3(3)JPV
+archive download-sw /overwrite /force-reload tftp://192.168.2.49/ap3g3-k9w8-tar.153-3.JPV
+
+Cisco
+
+delete /force /recursive flash:
+
+delete /force flash:
+
+delete flash:
+
+archive download-sw /overwrite /reload tftp://10.0.0.2/ap3g3-k9w8-tar.17_17_0_87.tar
+
+archive download-sw /overwrite /create-space tftp://10.0.0.2/ap3g3-k9w8-tar.17_17_0_87.tar
+
+archive download-sw tftp://10.0.0.2/ap3g3-k9w8-tar.17_17_0_87.tar
+
+
+capwap ap ip 10.0.0.1 255.255.255.0 10.0.0.2
+
+archive download-sw tftp://10.0.0.2/ap3g3-k9w8-tar.17_17_0_87.tar
+
+ap3g3-k9w8-tar.17_17_0_87.tar
+
+archive upload-sw flash:flash tftp://10.0.0.2/flash
