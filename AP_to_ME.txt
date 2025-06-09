@@ -9,8 +9,28 @@ ap-type mobility-express
 config boot path 1
 config boot path 2
 
+show filesystems
+delete /rf
+
+capwap ap erase all
+
+archive download-sw /reload tftp://10.0.0.2/ap3g3-k9w8-tar.153-3.JK1.tar
+8f1c22cbb87587f6e812d2d9489597f601de9f09dfa7465370b94494e877adc403eaa7b344ae3c93f03084c12ab869d3ed069e604095d35af0a9ad7082f2b20a
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-112-0.tar
+3af31e80a5b8d57f97440904a3f7e823cb1137108a02145b998db46ff0290d7971c9c536ba3b4a71bd67b17acd172f74798aa588a587aaddbbc582e2d22aeb98
+ap-type mobility-express tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-112-0.tar
+
+
 archive download-sw /reload tftp://10.0.0.2/ap3g3-k9w8-tar.153-3.JK.tar
 archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-105-0.tar
+
+
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-105-0.tar
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-112-0.tar
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-130-0.tar
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-151-0.tar
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-185-0.tar
+archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-190-0.tar
 archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-196-0.tar
 
 show country
@@ -24,7 +44,7 @@ show 802.11a
 show 802.11b
 save config
 
-
+AP2436.DA68.3758#ap-type mobility-express AP2436.DA68.3758
 ME console
 10.0.0.99/24
 10.0.0.2
