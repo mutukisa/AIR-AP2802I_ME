@@ -20,6 +20,15 @@ archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-112-0.tar
 3af31e80a5b8d57f97440904a3f7e823cb1137108a02145b998db46ff0290d7971c9c536ba3b4a71bd67b17acd172f74798aa588a587aaddbbc582e2d22aeb98
 ap-type mobility-express tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-112-0.tar
 
+Secure Data Wipe for Cisco Access Points
+Controller CLI (factory reset): clear ap config ap-name
+AP Console Clear Command
+Cisco Wave 1 (IOS) APs: clear capwap ap all-config
+Cisco Wave 2 APs: clear capwap ap all-config
+
+
+ap-type mobility-express tftp://10.0.0.2/ap3g3-k9w8-tar.153-3.JK1.tar
+ap-type mobility-express tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-112-0.tar
 
 archive download-sw /reload tftp://10.0.0.2/ap3g3-k9w8-tar.153-3.JK.tar
 archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-105-0.tar
