@@ -23,6 +23,11 @@ ap-type mobility-express tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-112-0.tar
 archive download-sw /reload tftp://10.0.0.2/ap3g3-k9w8-tar.153-3.JK.tar
 archive download-sw /reload tftp://10.0.0.2/AIR-AP2800-K9-ME-8-10-105-0.tar
 
+archive download-sw /reload tftp://10.0.0.2/ap3g3-8-10-105
+archive download-sw /reload tftp://10.0.0.2/ap3g3-8-10-112
+archive download-sw /reload tftp://10.0.0.2/ap3g3-8-10-196
+
+
 Secure Data Wipe for Cisco Access Points
 Controller CLI (factory reset): clear ap config ap-name
 AP Console Clear Command
