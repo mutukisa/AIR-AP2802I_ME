@@ -27,6 +27,7 @@ archive download-sw /reload tftp://10.0.0.2/ap3g3-8-10-105
 archive download-sw /reload tftp://10.0.0.2/ap3g3-8-10-112
 archive download-sw /reload tftp://10.0.0.2/ap3g3-8-10-196
 
+config interface address management <IP address> <netmask> <gateway>
 
 Secure Data Wipe for Cisco Access Points
 Controller CLI (factory reset): clear ap config ap-name
