@@ -34,7 +34,8 @@ AP Console Clear Command
 Cisco Wave 1 (IOS) APs: clear capwap ap all-config
 Cisco Wave 2 APs: clear capwap ap all-config
 
-configure boot path 1 or 2
+configure boot path 1
+configure boot path 2
 primary image:1
 backup image:2
 
