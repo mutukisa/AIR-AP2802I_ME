@@ -5,7 +5,7 @@ show boot
 
 reload
 
-ap-type mobility-express
+ap-type mobility-express tftp://
 config boot path 1
 config boot path 2
 
